@@ -1,0 +1,10 @@
+[Unit]
+Description=Dummy Service
+
+[Service]
+WorkingDirectory=/home/m/TY/CN_LAB/Project/Project  
+User = m
+ExecStart= /usr/bin/python3.8  /home/m/TY/CN_LAB/Project/Project/http.py
+
+[Install]
+WantedBy=multi-user.target
